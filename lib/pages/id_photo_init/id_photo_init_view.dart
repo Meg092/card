@@ -10,8 +10,8 @@ class IdPhotoInitView extends GetView<IdPhotoInitLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.huels.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.jerde.value
+              ? const CircularProgressIndicator(color: Colors.blue)
               : buildError(),
         ),
       ),
@@ -25,7 +25,7 @@ class IdPhotoInitView extends GetView<IdPhotoInitLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.jrvsn();
+              controller.debyphn();
             },
             icon: const Icon(
               Icons.restart_alt,

@@ -10,8 +10,11 @@ import 'package:photo_production/pages/id_card_coping_details/id_card_coping_det
 import 'package:photo_production/pages/id_card_coping_details/id_card_coping_details_view.dart';
 import 'package:photo_production/pages/id_photo_create/id_photo_create_binding.dart';
 import 'package:photo_production/pages/id_photo_create/id_photo_create_view.dart';
+import 'package:photo_production/pages/id_photo_create/id_photo_rish.dart';
 import 'package:photo_production/pages/id_photo_details/id_photo_details_binding.dart';
 import 'package:photo_production/pages/id_photo_details/id_photo_details_view.dart';
+import 'package:photo_production/pages/id_photo_init/id_photo_init_binding.dart';
+import 'package:photo_production/pages/id_photo_init/id_photo_init_view.dart';
 import 'package:photo_production/pages/photo_cropping/photo_cropping_binding.dart';
 import 'package:photo_production/pages/photo_cropping/photo_cropping_view.dart';
 import 'package:photo_production/pages/photo_enlargement/photo_enlargement_binding.dart';
@@ -52,7 +55,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Cards,
-      initialRoute: '/photo_main',
+      initialRoute: '/',
       theme: ThemeData(
           useMaterial3: true,
           primaryColor: primaryColor,
@@ -88,12 +91,14 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Cards = [
+  GetPage(name: '/', page: () => IdPhotoInitView(), binding: IdPhotoInitBinding()),
   GetPage(name: '/photo_main', page: () => PhotoMainWidget(), binding: PhotoMainBinding()),
   GetPage(name: '/id_photo_create', page: () => const IdPhotoCreatePage(), binding: IdPhotoCreateBinding()),
   GetPage(name: '/id_photo_details', page: () => IdPhotoDetailsPage(), binding: IdPhotoDetailsBinding()),
   GetPage(name: '/photo_cropping', page: () => PhotoCroppingPage(), binding: PhotoCroppingBinding()),
   GetPage(name: '/documents', page: () => DocumentsPage(), binding: DocumentsBinding()),
   GetPage(name: '/question_answer', page: () => QuestionAnswerPage(), binding: QuestionAnswerBinding()),
+  GetPage(name: '/id_photo_rish', page: () => IdPhotoRish()),
   GetPage(name: '/question_answer_details', page: () => QuestionAnswerDetailsPage(), binding: QuestionAnswerDetailsBinding()),
   GetPage(name: '/id_card_coping', page: () => IdCardCopingPage(), binding: IdCardCopingBinding()),
   GetPage(name: '/id_card_coping_details', page: () => IdCardCopingDetailsPage(), binding: IdCardCopingDetailsBinding()),

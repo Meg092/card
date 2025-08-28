@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Photo Production</string>
+	<string>CERBE IN</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>photo_production</string>
+	<string>CERBE IN</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -27,13 +27,13 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Access camera for take a photo</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Album permission is required to save pictures</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>You need album permission to select pictures</string>
+	<string>Please enable camera permission to upload ID photo</string>
 	<key>NSMicrophoneUsageDescription</key>
-    <string>Access microphone for record video</string>
+	<string>Please enable microphone permission to record video</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Please enable album permission to save pictures</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Please enable album permission to upload ID photo</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
